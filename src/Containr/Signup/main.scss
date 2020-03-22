@@ -1,0 +1,26 @@
+.signupWrapper {
+  margin-top: 10em;
+  margin-left: 5em;
+}
+div {
+}
+.signupContainer {
+  background-color: whitesmoke;
+  border-radius: 5em;
+  padding: 8em;
+  margin: auto;
+  width: fit-content;
+}
+span {
+  margin: auto 3em;
+}
+
+@media screen and (max-width: 600px) {
+  .signupContainer {
+    padding: 3em;
+  }
+  .signupWrapper {
+    margin-top: 8em;
+    margin-left: 0em;
+  }
+}

@@ -1,0 +1,28 @@
+.divider {
+  text-align: center;
+  margin: 2em 0;
+}
+.fileContainer {
+  display: flex;
+  height: fit-content;
+  flex-direction: column;
+  margin: 1em 1em 0 1em;
+}
+.submitButton {
+  height: 4em;
+  width: 20em;
+  margin: 5em auto;
+  border-radius: 10px;
+  background-color: #0c79fa;
+  border: 0;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.submitButton:hover {
+  background-color: lightgray;
+}
+.submitButton:focus {
+  outline: none;
+}

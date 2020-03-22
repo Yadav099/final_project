@@ -1,0 +1,31 @@
+input {
+  opacity: 0;
+  width: 100%;
+  height: 5em;
+  margin: 0;
+}
+.fileWrapper {
+  width: 100%;
+  height: fit-content;
+  margin: 0 auto;
+
+  background-color: #eeeeee;
+}
+.heading {
+  margin: 1em auto;
+  height: fit-content;
+  width: fit-content;
+  text-align: center;
+}
+img {
+  height: 5em;
+  border-radius: 20px;
+  margin: auto 0;
+}
+.imageFileWrapper {
+  display: flex;
+
+  border-radius: 1.5em;
+  padding: 1em;
+  background-color: #eeeeee;
+}

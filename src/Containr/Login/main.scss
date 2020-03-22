@@ -1,0 +1,17 @@
+.loginWrapper {
+  background-color: whitesmoke;
+  border-radius: 5em;
+  padding: 8em;
+  margin: 0 auto;
+  margin-top: 10em;
+  width: fit-content;
+}
+
+@media screen and (max-width: 600px) {
+  .loginWrapper {
+    padding: 3em;
+  }
+}
+span {
+  margin: auto 3em;
+}
