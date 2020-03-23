@@ -2,6 +2,8 @@ import React from "react";
 import "./main.scss";
 import { TextField, Toolbar, Typography, AppBar } from "@material-ui/core/";
 import { Button, Row } from "react-bootstrap";
+
+import axios from "axios";
 const Signup = () => {
   const [userName, setUserName] = React.useState("");
   const updateUserName = (event: any) => {
@@ -24,7 +26,22 @@ const Signup = () => {
   };
 
   const handleSubmit = () => {
-    alert(userName + userEmail + userId + userPassword);
+    axios
+      .post("http://127.0.0.1:5000/Signup", {
+        username: userName,
+        userEmail: userEmail,
+        userPassword: userPassword,
+        userId: userId
+      })
+      .then(function(response: any) {
+        console.log(response.status);
+        if (response.status === 200 && response.data === "Succesfull") {
+        }
+        console.log(response.data);
+      })
+      .catch(function(error: any) {
+        console.log(error);
+      });
   };
   return (
     <div>
