@@ -5,6 +5,7 @@ import { IoIosCloudUpload } from "react-icons/io";
 interface IFileInput {
   placeHolder: string;
   type: string;
+  updateVideo: (Event: any) => void;
 }
 const FileInput = (prop: IFileInput) => {
   return (
@@ -18,6 +19,9 @@ const FileInput = (prop: IFileInput) => {
             accept={prop.type}
             capture="camera"
             aria-label="File browser example"
+            onChange={(Event: any) => {
+              prop.updateVideo(Event);
+            }}
           />
         </div>
         <img src={upload}></img>
